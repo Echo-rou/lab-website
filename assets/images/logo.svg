@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2e5a8f"/>
+      <stop offset="1" stop-color="#1f3a5f"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#g)"/>
+  <!-- 烧瓶图标 -->
+  <path d="M26 14h12v4h-2v9.5l10.6 18.6A5 5 0 0 1 42.3 54H21.7a5 5 0 0 1-4.3-7.9L28 27.5V18h-2z"
+        fill="none" stroke="#e6a23c" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="27" cy="45" r="2.4" fill="#e6a23c"/>
+  <circle cx="35" cy="48" r="1.8" fill="#e6a23c"/>
+  <circle cx="33" cy="41" r="1.4" fill="#e6a23c"/>
+</svg>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>分享列表 · XX实验室</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="实验室 logo">
+        <span>
+          <span class="brand-name">XX实验室</span>
+          <span class="brand-sub">SHARE &amp; GROW</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="打开菜单">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="shares.html">分享</a>
+        <a href="history.html">发展历程</a>
+        <a href="members.html">成员</a>
+        <a href="gallery.html">相册</a>
+        <a href="guide.html" class="nav-cta">我要上传</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>分享</h1>
+      <p>经验、教程、复盘、作品——每一篇都值得被留下来</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+
+      <div class="notice">
+        💡 <strong>想发一篇自己的分享？</strong>
+        不需要安装任何软件！打开
+        <a href="guide.html" target="_blank" rel="noopener">《我要上传》指南</a>，
+        跟着步骤在浏览器里 5 分钟就能发布。
+      </div>
+
+      <!--
+        ============ 如何新增一张分享卡片 ============
+        1. 复制下面任意一张 <div class="card"> ... </div>
+        2. 粘贴到卡片列表的最上面
+        3. 修改：标签 / 标题链接 / 摘要 / 作者 / 日期
+        4. 提交保存，网页 1~2 分钟后自动更新
+      -->
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="tags"><span class="tag accent">示例</span><span class="tag">公告</span></div>
+          <h3><a href="shares/2026-example-welcome.html">示例分享：欢迎来到我们的分享站</a></h3>
+          <p class="summary">演示一篇分享的完整样子：标题、作者、标签、正文排版，以及如何插入图片和代码。可以直接照着写。</p>
+          <div class="meta"><span>作者：示例同学</span><span>2026-10-26</span></div>
+        </div>
+
+        <!-- 邀请卡：一直保留在列表末尾 -->
+        <div class="card invite">
+          <div class="plus">＋</div>
+          <p>这一格留给你的分享</p>
+          <a href="guide.html">我要上传 →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <span data-year>2026</span> XX实验室 · 分享站</div>
+      <div>
+        <a href="https://github.com/Echo-rou/lab-website" target="_blank" rel="noopener">GitHub 仓库</a>
+        <span class="sep">|</span>
+        <a href="guide.html">内容上传指南</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

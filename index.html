@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO: 把「XX实验室」替换成你们实验室的真实名称（本文件和其它页面都搜索替换一次） -->
+  <title>XX实验室 · 分享站</title>
+  <meta name="description" content="XX实验室的分享网站：经验分享、发展历程、成员相册">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========== 顶部导航（全站每个页面保持一致） ========== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="实验室 logo">
+        <span>
+          <span class="brand-name">XX实验室</span>
+          <span class="brand-sub">SHARE &amp; GROW</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="打开菜单">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="shares.html">分享</a>
+        <a href="history.html">发展历程</a>
+        <a href="members.html">成员</a>
+        <a href="gallery.html">相册</a>
+        <a href="guide.html" class="nav-cta">我要上传</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== 首页主视觉 ========== -->
+  <div class="hero">
+    <div class="container">
+      <h1>XX实验室 · 分享站</h1>
+      <p>这里记录实验室的每一份经验与作品——比赛复盘、踩坑笔记、项目作品、毕业去向，都在这里沉淀与传承。</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="shares.html">浏览大家的分享</a>
+        <a class="btn btn-ghost" href="guide.html">我要上传内容</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 数据条（数字请手动更新） ========== -->
+  <div class="stats-band">
+    <div class="container">
+      <div><div class="num">1</div><div class="label">篇分享</div></div>
+      <div><div class="num">2</div><div class="label">届成员</div></div>
+      <div><div class="num">6</div><div class="label">张相册照片</div></div>
+    </div>
+  </div>
+
+  <!-- ========== 最新分享 ========== -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>最新分享</h2>
+        <a class="more" href="shares.html">查看全部 →</a>
+      </div>
+      <div class="card-grid">
+
+        <!-- 卡片模板：新分享发布后，复制一张卡片放到最前面 -->
+        <div class="card">
+          <div class="tags"><span class="tag accent">示例</span><span class="tag">公告</span></div>
+          <h3><a href="shares/2026-example-welcome.html">示例分享：欢迎来到我们的分享站</a></h3>
+          <p class="summary">这是第一篇示例分享，演示一篇分享长什么样、怎么写。你的分享会像这样出现在首页和分享列表里。</p>
+          <div class="meta"><span>作者：示例同学</span><span>2026-10-26</span></div>
+        </div>
+
+        <div class="card">
+          <div class="tags"><span class="tag">比赛经验</span></div>
+          <h3><a href="shares.html">这里将是学长的电赛复盘</a></h3>
+          <p class="summary">（占位卡片）等学长上传第一篇真实分享后，把这张卡片替换掉。</p>
+          <div class="meta"><span>作者：—</span><span>—</span></div>
+        </div>
+
+        <div class="card invite">
+          <div class="plus">＋</div>
+          <p>下一篇分享，可以是你的：<br>比赛复盘 / 踩坑笔记 / 教程 / 学习路线</p>
+          <a href="guide.html">查看上传方法 →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 实验室简介 + 快速入口 ========== -->
+  <section>
+    <div class="container">
+      <div class="section-head"><h2>关于我们</h2></div>
+      <div class="notice">
+        <strong>实验室简介（待补充）：</strong>
+        在这里写一段 100~200 字的实验室介绍：研究方向、所属学院、指导老师、招新方式等。
+        修改方法见仓库根目录 <code>README.md</code>。
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <h3><a href="history.html">📜 发展历程</a></h3>
+          <p class="summary">实验室从成立到现在的大事记：比赛获奖、项目节点、重要活动。</p>
+        </div>
+        <div class="card">
+          <h3><a href="members.html">👥 成员与学长学姐</a></h3>
+          <p class="summary">在读成员介绍，以及毕业学长学姐的去向和留给实验室的话。</p>
+        </div>
+        <div class="card">
+          <h3><a href="gallery.html">📷 相册</a></h3>
+          <p class="summary">比赛现场、组会、团建、实验室日常，用照片记录我们一起走过的路。</p>
+        </div>
+        <div class="card">
+          <h3><a href="guide.html">⬆️ 我要上传</a></h3>
+          <p class="summary">零基础教程：不用安装任何软件，用浏览器在 GitHub 网页上直接发布内容。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        © <span data-year>2026</span> XX实验室 · 分享站
+        <!-- 如学校要求备案，可在这里加备案号：<span class="sep">|</span><a href="#">X ICP 备 XXXXXXXX 号</a> -->
+      </div>
+      <div>
+        <a href="https://github.com/Echo-rou/lab-website" target="_blank" rel="noopener">GitHub 仓库</a>
+        <span class="sep">|</span>
+        <a href="guide.html">内容上传指南</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

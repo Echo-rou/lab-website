@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>相册 · XX实验室</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="实验室 logo">
+        <span>
+          <span class="brand-name">XX实验室</span>
+          <span class="brand-sub">SHARE &amp; GROW</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="打开菜单">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="shares.html">分享</a>
+        <a href="history.html">发展历程</a>
+        <a href="members.html">成员</a>
+        <a href="gallery.html">相册</a>
+        <a href="guide.html" class="nav-cta">我要上传</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>相册</h1>
+      <p>比赛现场、组会、团建和实验室的日常</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="notice">
+        📷 <strong>如何换成真实照片：</strong>
+        ① 在 GitHub 仓库里进入 <code>assets/images/gallery/</code> 文件夹，点 <code>Add file → Upload files</code> 把照片拖进去；
+        ② 回到本页（<code>gallery.html</code>）点铅笔编辑，把占位图换成你的照片文件名，并写上说明文字。
+        详细图文步骤见 <a href="guide.html">上传指南</a>。
+      </div>
+
+      <!--
+        ============ 照片卡片模板 ============
+        <div class="g-item">
+          <img src="assets/images/gallery/你的照片.jpg" alt="照片说明">
+          <div class="caption"><strong>标题</strong> · 时间 · 拍摄者</div>
+        </div>
+      -->
+      <div class="gallery-grid">
+
+        <div class="g-item">
+          <img src="assets/images/gallery/ph-01.svg" alt="照片占位">
+          <div class="caption"><strong>占位图 01</strong> · 替换成真实照片 + 说明</div>
+        </div>
+
+        <div class="g-item">
+          <img src="assets/images/gallery/ph-02.svg" alt="照片占位">
+          <div class="caption"><strong>占位图 02</strong> · 替换成真实照片 + 说明</div>
+        </div>
+
+        <div class="g-item">
+          <img src="assets/images/gallery/ph-03.svg" alt="照片占位">
+          <div class="caption"><strong>占位图 03</strong> · 替换成真实照片 + 说明</div>
+        </div>
+
+        <div class="g-item">
+          <img src="assets/images/gallery/ph-04.svg" alt="照片占位">
+          <div class="caption"><strong>占位图 04</strong> · 替换成真实照片 + 说明</div>
+        </div>
+
+        <div class="g-item">
+          <img src="assets/images/gallery/ph-05.svg" alt="照片占位">
+          <div class="caption"><strong>占位图 05</strong> · 替换成真实照片 + 说明</div>
+        </div>
+
+        <div class="g-item">
+          <img src="assets/images/gallery/ph-06.svg" alt="照片占位">
+          <div class="caption"><strong>占位图 06</strong> · 替换成真实照片 + 说明</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <span data-year>2026</span> XX实验室 · 分享站</div>
+      <div>
+        <a href="https://github.com/Echo-rou/lab-website" target="_blank" rel="noopener">GitHub 仓库</a>
+        <span class="sep">|</span>
+        <a href="guide.html">内容上传指南</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

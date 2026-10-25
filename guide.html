@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我要上传 · XX实验室</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="实验室 logo">
+        <span>
+          <span class="brand-name">XX实验室</span>
+          <span class="brand-sub">SHARE &amp; GROW</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="打开菜单">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="shares.html">分享</a>
+        <a href="history.html">发展历程</a>
+        <a href="members.html">成员</a>
+        <a href="gallery.html">相册</a>
+        <a href="guide.html" class="nav-cta">我要上传</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>我要上传</h1>
+      <p>不用装软件、不用学 Git，用浏览器就能发布内容</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+
+      <div class="notice">
+        🧭 <strong>先说结论：</strong>整个网站就是 GitHub 上的一个仓库
+        <a href="https://github.com/Echo-rou/lab-website" target="_blank" rel="noopener">Echo-rou/lab-website</a>，
+        所有内容都以文件形式保存在里面。你<strong>用浏览器编辑文件并保存</strong>，网站就会在 1~2 分钟后自动更新。
+        修改仓库需要你的 GitHub 账号被拉进协作成员（找管理员添加一次即可）。
+      </div>
+
+      <div class="section-head"><h2>方式一：网页上传（推荐所有人）</h2></div>
+      <div class="steps">
+
+        <div class="step">
+          <h3>登录 GitHub 并打开仓库</h3>
+          <p>用浏览器打开仓库页面：<code>github.com/Echo-rou/lab-website</code>（没账号就先注册一个，然后联系管理员把你加为协作者）。</p>
+        </div>
+
+        <div class="step">
+          <h3>用模板创建你的分享页面</h3>
+          <p>进入仓库里的 <code>shares/</code> 文件夹，打开 <code>template.html</code>：</p>
+          <ul>
+            <li>点右上角铅笔 ✏️ 进入编辑模式；</li>
+            <li><strong>全选复制</strong>里面的全部内容；</li>
+            <li>回到 <code>shares/</code> 文件夹，点 <code>Add file → Create new file</code>；</li>
+            <li>文件名按「日期-英文短名」格式起，例如 <code>2026-10-my-esp32-notes.html</code>（文件名建议用英文和数字，避免空格）；</li>
+            <li>把模板内容粘贴进去，按文件里的中文注释逐项填写。</li>
+          </ul>
+        </div>
+
+        <div class="step">
+          <h3>保存（提交）</h3>
+          <p>填写完成后滚动到页面底部，点绿色的 <code>Commit changes</code> 按钮。默认选项不用改，可以在消息框里写一句「新增：XXX 的电赛复盘」方便日后查找。</p>
+        </div>
+
+        <div class="step">
+          <h3>把分享加进列表页</h3>
+          <p>打开仓库根目录的 <code>shares.html</code>，点 ✏️ 编辑，在 <code>card-grid</code> 区域<strong>最上面</strong>复制粘贴一张卡片并改成你的信息：</p>
+          <pre>&lt;div class="card"&gt;
+  &lt;div class="tags"&gt;&lt;span class="tag"&gt;比赛经验&lt;/span&gt;&lt;/div&gt;
+  &lt;h3&gt;&lt;a href="shares/2026-10-my-esp32-notes.html"&gt;我的分享标题&lt;/a&gt;&lt;/h3&gt;
+  &lt;p class="summary"&gt;一两句话的摘要。&lt;/p&gt;
+  &lt;div class="meta"&gt;&lt;span&gt;作者：你的名字&lt;/span&gt;&lt;span&gt;2026-10-26&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+          <p>同样点 <code>Commit changes</code> 保存。大功告成，1~2 分钟后网站上就能看到你的分享！</p>
+        </div>
+
+      </div>
+
+      <div class="section-head" style="margin-top:48px"><h2>怎么上传图片 / 照片？</h2></div>
+      <div class="steps">
+        <div class="step">
+          <h3>上传图片文件</h3>
+          <p>在仓库里进入 <code>assets/images/gallery/</code>（相册照片）或 <code>assets/images/</code>（其它图片），点 <code>Add file → Upload files</code>，把图片直接拖进去，然后 <code>Commit changes</code>。</p>
+        </div>
+        <div class="step">
+          <h3>在页面里引用</h3>
+          <p>相册页 <code>gallery.html</code>：复制一张 <code>g-item</code> 卡片，把 <code>src</code> 换成你的文件名；<br>
+          分享正文里插图：用 <code>&lt;img src="../assets/images/你的图片.jpg" alt="说明"&gt;</code>（注意分享页在 shares 文件夹里，路径前要加 <code>../</code>）。</p>
+        </div>
+      </div>
+
+      <div class="section-head" style="margin-top:48px"><h2>方式二：本地 Git（会用 Git 的同学）</h2></div>
+      <div class="steps">
+        <div class="step">
+          <h3>克隆 → 修改 → 推送</h3>
+          <pre>git clone https://github.com/Echo-rou/lab-website.git
+cd lab-website
+# ...照方式一的说明添加你的分享文件 ...
+git add .
+git commit -m "新增：XXX 的分享"
+git push</pre>
+          <p>推送后网站同样会自动更新。</p>
+        </div>
+      </div>
+
+      <div class="section-head" style="margin-top:48px"><h2>注意事项</h2></div>
+      <div class="card-grid">
+        <div class="card">
+          <h3>🗂 文件命名</h3>
+          <p class="summary">分享页面和图片文件名用英文、数字和连字符，如 <code>2026-10-esp32-notes.html</code>；标题在文件内容里写中文即可。</p>
+        </div>
+        <div class="card">
+          <h3>📦 图片大小</h3>
+          <p class="summary">单张照片建议压缩到 1MB 以内（微信截图/手机原图可先压缩），单文件超过 25MB 网页上传会失败。</p>
+        </div>
+        <div class="card">
+          <h3>🔒 内容安全</h3>
+          <p class="summary">仓库是公开的：不要上传涉密内容、他人隐私（证件、成绩单）和有版权争议的资料；引用别人的文章要注明出处。</p>
+        </div>
+        <div class="card">
+          <h3>🆘 改坏了怎么办</h3>
+          <p class="summary">别慌。GitHub 会保存每次修改历史，联系管理员就能恢复到任意旧版本，不会真的弄丢。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <span data-year>2026</span> XX实验室 · 分享站</div>
+      <div>
+        <a href="https://github.com/Echo-rou/lab-website" target="_blank" rel="noopener">GitHub 仓库</a>
+        <span class="sep">|</span>
+        <a href="guide.html">内容上传指南</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
